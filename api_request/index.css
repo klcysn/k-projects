@@ -21,6 +21,14 @@ body{
     height: 50vh;
     border: 1px dotted #b61827;
     background-color: #b61827;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+    padding: 50px;
+    box-sizing: border-box;
+    transition: ease-in-out all 3s;
 }
 
 #button{
@@ -35,7 +43,7 @@ body{
     color: white;
     font-size: xx-large;
     box-shadow: 3px 3px 3px 3px #000F2C;
-    transition: ease-in-out all 5000;
+    transition: ease-in-out all 100ms;
 }
 
 #button:active{
@@ -44,5 +52,5 @@ body{
 
 #button:hover{
     outline: 1px solid white;
-    outline-offset: -5px;
+    outline-offset: -10px;
 }
