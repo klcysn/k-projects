@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url("https://image.freepik.com/free-photo/white-toy-airplane-yellow-background-with-copy-space_68196-1367.jpg") no-repeat;
+    background-size: cover;
+}
+
+#container{
+    width: 80%;
+    margin: auto;
+    margin-top: 10vh;
+    
+}
+
+#destination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px dashed orangered;
+}
+
+#description{
+    color: red;
+    font-size: x-large;
+}
+
+input{
+    width: 100%;
+    outline: none;
+    border: 3px dashed orangered;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: large;
+    background-color: #FFBF43;
+}
+
+button{
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: large;
+    background-color: orangered;
+    cursor: pointer;
+}
