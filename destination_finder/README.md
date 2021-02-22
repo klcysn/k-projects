@@ -5,5 +5,5 @@ Task:
 Write a function that accepts array of tickets, where ticket has format [source: string, destination: string]
 and returns comma separated countries in order of visiting.
 Example:
-tickets: [["JPN", "PHL"], ["BRA", "UAE"], ["USA", "BRA"], ["UAE", "JPN"]]
-result: "USA, BRA, UAE, JPN, PHL"
+tickets: [["USA", "PHL"], ["BRA", "UAE"], ["USA", "BRA"], ["UAE", "USA"], ["USA", "JPN"], ["JPN", "TUR"], ["TUR", "USA"]]
+result: USA ✈ BRA ✈ UAE ✈ USA ✈ BRA ✈ UAE ✈ USA ✈ PHL
