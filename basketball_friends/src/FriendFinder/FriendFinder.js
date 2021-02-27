@@ -15,7 +15,7 @@ export default class FriendFinder extends React.Component{
     }
 
     addFriend = () =>{
-        this.setState({friends: [...this.state.friends, this.state]})
+        this.setState({friends: [...this.state.friends, this.state.data]})
     }
 
     
@@ -26,14 +26,17 @@ export default class FriendFinder extends React.Component{
             
         <div className="friend-finder">
             <img className="friend-logo" src={this.state.data.picture?.large} alt={this.state.data.name?.first} />
-            <div>
-            Kişi bilgileri
-            </div>
             <h2>{this.state.data.name?.first} {this.state.data.name?.last}</h2>
             <h3>Nationality: {this.state.data?.nat}</h3>
             <div className="button-container">
                 <button onClick={this.fetchPeople}>Find a Friend</button>
                 <button onClick={this.addFriend}>Add As a Friend</button>
+            </div>
+            <div>
+                {name} {lastName}'s Friends
+            </div>
+            <div>
+                {this.state.friends?.map((friend)=> <h3>{friend.name?.first} {friend.name?.last}</h3>)}
             </div>
         </div>
         )
