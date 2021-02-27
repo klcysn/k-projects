@@ -18,6 +18,10 @@ export default class FriendFinder extends React.Component{
         this.setState({friends: [...this.state.friends, this.state.data]})
     }
 
+    removeFriend = (item) =>{
+        this.setState({friends: this.state.friends.filter((friend)=> friend.cell !== item.cell)})
+    }
+
     
     render(){
         console.log(this.state.friends)
@@ -36,7 +40,15 @@ export default class FriendFinder extends React.Component{
                 {name} {lastName}'s Friends
             </div>
             <div>
-                {this.state.friends?.map((friend)=> <h3>{friend.name?.first} {friend.name?.last}</h3>)}
+                {this.state.friends?.map((friend)=> {
+                    return(
+                        <div className="friend">
+                        <img src={friend.picture.medium} alt="" />
+                        <h3>{friend.name?.first} {friend.name?.last}</h3>
+                        <button onClick={()=>this.removeFriend(friend)}>Remove</button>
+                        </div>
+                    )
+                })}
             </div>
         </div>
         )
