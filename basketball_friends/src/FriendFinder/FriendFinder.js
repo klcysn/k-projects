@@ -4,33 +4,30 @@ import logo from "../assets/logo.png"
 
 
 export default class FriendFinder extends React.Component{
-
     state={
         data : {},
         friends : [],
         show: false
     }
-
     fetchPeople = () =>{
         fetch("https://randomuser.me/api/").then((friend)=>friend.json()).then((friend)=>this.setState({data: friend.results[0]}))
     }
-
+    
     addFriend = () =>{
         if(!this.state.friends.includes(this.state.data)){
             this.setState({friends: [this.state.data, ...this.state.friends]})
         }else{
-            // alert(`You have already add "${this.state.data.name.first} ${this.state.data.name.last}"`)
             this.setState({show: true})
         }
     }
-
+    
     removeFriend = (item) =>{
         this.setState({friends: this.state.friends.filter((friend)=> friend.cell !== item.cell)})
     }
-
+    
     
     render(){
-        const {name, lastName} = this.props
+        const {userName} = this.props.location.state
         return(
             
         <div className="friend-finder">
@@ -42,7 +39,7 @@ export default class FriendFinder extends React.Component{
                 <button onClick={this.addFriend}>Add As a Friend</button>
             </div>
             <div>
-                {name} {lastName}'s Friends
+                {userName}'s Friends
             </div>
             <div className="friend-container">
                 {this.state.friends?.map((friend)=> {
