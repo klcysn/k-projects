@@ -7,7 +7,8 @@ export default class FriendFinder extends React.Component{
 
     state={
         data : {},
-        friends : []
+        friends : [],
+        show: false
     }
 
     fetchPeople = () =>{
@@ -15,7 +16,12 @@ export default class FriendFinder extends React.Component{
     }
 
     addFriend = () =>{
-        this.setState({friends: [...this.state.friends, this.state.data]})
+        if(!this.state.friends.includes(this.state.data)){
+            this.setState({friends: [this.state.data, ...this.state.friends]})
+        }else{
+            // alert(`You have already add "${this.state.data.name.first} ${this.state.data.name.last}"`)
+            this.setState({show: true})
+        }
     }
 
     removeFriend = (item) =>{
@@ -24,7 +30,6 @@ export default class FriendFinder extends React.Component{
 
     
     render(){
-        console.log(this.state.friends)
         const {name, lastName} = this.props
         return(
             
@@ -39,17 +44,22 @@ export default class FriendFinder extends React.Component{
             <div>
                 {name} {lastName}'s Friends
             </div>
-            <div>
+            <div className="friend-container">
                 {this.state.friends?.map((friend)=> {
                     return(
                         <div className="friend">
-                        <img src={friend.picture.medium} alt="" />
-                        <h3>{friend.name?.first} {friend.name?.last}</h3>
-                        <button onClick={()=>this.removeFriend(friend)}>Remove</button>
+                            <img src={friend.picture.medium} alt="" />
+                            <h3>{friend.name?.first} {friend.name?.last}</h3>
+                            <button onClick={()=>this.removeFriend(friend)}>Remove</button>
                         </div>
                     )
                 })}
             </div>
+           {this.state.show &&
+           <div className="snack-bar">
+               You have already added <b>{this.state.data.name.first} {this.state.data.name.last}</b>
+               <button onClick={()=>this.setState({show: false})}>Ok</button>
+            </div>}
         </div>
         )
     }

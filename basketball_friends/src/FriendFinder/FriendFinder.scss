@@ -6,6 +6,8 @@
     justify-content: center;
     align-items: center;
     background-color:darkcyan;
+    position:relative;
+    
 }
 
 .friend-logo{
@@ -30,14 +32,48 @@ button{
     cursor: pointer;
 }
 
+.friend-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 35%;
+    overflow-y: scroll;
+}
+
 .friend{
-    width: 30%;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 5px;
 
     button{
-        width: 100%
+        width: 30%;
+        font-size: medium;
+        margin-right: 10px;
     }
 }
+
+.snack-bar{
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    right: 30%;
+    z-index: 1;
+    background-color: chartreuse;
+    // width: 30%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: snack;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes snack {
+    from {top:100%; opacity: 0;}
+    to {top:50%; opacity: 1;}
+  }
