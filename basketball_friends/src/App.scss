@@ -7,7 +7,7 @@
     justify-content: space-around;
     align-items: center;
 
-    span{
+    .link{
         font-size: 24px;
         font-weight: 600;
         display: block;
@@ -16,6 +16,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        text-decoration: none;
+        color: black;
 
         &:nth-child(1){
             background-color: #BFFFBC;

@@ -5,17 +5,27 @@ import FriendFinder from "./FriendFinder/FriendFinder"
 import MyProfile from "./MyProfile/Myprofile"
 import './App.scss';
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
 
 
 class App extends React.Component {
   render(){
     return (
-      <div className="App">
-        <Nav home="Home"  myProfile="My Profile"/>
-        <Home/>
-        <FriendFinder name="Yasin" lastName="Kilic"/>
-        <MyProfile/>
-      </div>
+      <Router>
+        <div className="App">
+          <Nav home="Home" myProfile="My Profile" />
+          <Switch>
+            <Route path="/friend-finder" component={FriendFinder} exact />
+            <Route path="/profile" component={MyProfile} exact />
+            <Route path="/" component={Home} />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
