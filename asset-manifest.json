@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/klcysn/k-projects/tree/master/memory_card_game/static/css/main.98153425.chunk.css",
-    "main.js": "/klcysn/k-projects/tree/master/memory_card_game/static/js/main.2c7883b9.chunk.js",
-    "main.js.map": "/klcysn/k-projects/tree/master/memory_card_game/static/js/main.2c7883b9.chunk.js.map",
-    "runtime-main.js": "/klcysn/k-projects/tree/master/memory_card_game/static/js/runtime-main.f8857f1a.js",
-    "runtime-main.js.map": "/klcysn/k-projects/tree/master/memory_card_game/static/js/runtime-main.f8857f1a.js.map",
-    "static/js/2.fdca2a0a.chunk.js": "/klcysn/k-projects/tree/master/memory_card_game/static/js/2.fdca2a0a.chunk.js",
-    "static/js/2.fdca2a0a.chunk.js.map": "/klcysn/k-projects/tree/master/memory_card_game/static/js/2.fdca2a0a.chunk.js.map",
-    "static/js/3.fbd20611.chunk.js": "/klcysn/k-projects/tree/master/memory_card_game/static/js/3.fbd20611.chunk.js",
-    "static/js/3.fbd20611.chunk.js.map": "/klcysn/k-projects/tree/master/memory_card_game/static/js/3.fbd20611.chunk.js.map",
-    "index.html": "/klcysn/k-projects/tree/master/memory_card_game/index.html",
-    "static/css/main.98153425.chunk.css.map": "/klcysn/k-projects/tree/master/memory_card_game/static/css/main.98153425.chunk.css.map",
-    "static/js/2.fdca2a0a.chunk.js.LICENSE.txt": "/klcysn/k-projects/tree/master/memory_card_game/static/js/2.fdca2a0a.chunk.js.LICENSE.txt"
+    "main.css": "/k-projects/static/css/main.98153425.chunk.css",
+    "main.js": "/k-projects/static/js/main.2c7883b9.chunk.js",
+    "main.js.map": "/k-projects/static/js/main.2c7883b9.chunk.js.map",
+    "runtime-main.js": "/k-projects/static/js/runtime-main.40821217.js",
+    "runtime-main.js.map": "/k-projects/static/js/runtime-main.40821217.js.map",
+    "static/js/2.fdca2a0a.chunk.js": "/k-projects/static/js/2.fdca2a0a.chunk.js",
+    "static/js/2.fdca2a0a.chunk.js.map": "/k-projects/static/js/2.fdca2a0a.chunk.js.map",
+    "static/js/3.fbd20611.chunk.js": "/k-projects/static/js/3.fbd20611.chunk.js",
+    "static/js/3.fbd20611.chunk.js.map": "/k-projects/static/js/3.fbd20611.chunk.js.map",
+    "index.html": "/k-projects/index.html",
+    "static/css/main.98153425.chunk.css.map": "/k-projects/static/css/main.98153425.chunk.css.map",
+    "static/js/2.fdca2a0a.chunk.js.LICENSE.txt": "/k-projects/static/js/2.fdca2a0a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f8857f1a.js",
+    "static/js/runtime-main.40821217.js",
     "static/js/2.fdca2a0a.chunk.js",
     "static/css/main.98153425.chunk.css",
     "static/js/main.2c7883b9.chunk.js"
