@@ -21,7 +21,7 @@ export default class Home extends React.Component{
             <div className="home">
                 <img className="home-logo" src={logo} alt="logo"/>
                 <h2>Basketball Friends</h2>
-                <input onChange={this.onChangeHandler} />
+                <input className="home-input" onChange={this.onChangeHandler} />
                 <button onClick={this.onClickHandler}>Submit</button>
             </div>
         )

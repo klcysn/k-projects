@@ -30,6 +30,8 @@ button{
     font-size: x-large;
     outline: none;
     cursor: pointer;
+    border: none;
+    box-sizing: border-box;
 }
 
 .friend-container{
